@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/webproject-0.0.1-SNAPSHOT.jar demo.jar
+COPY --from=build /target/webproject-0.0.1-SNAPSHOT.jar webproject.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","webproject.jar"]
