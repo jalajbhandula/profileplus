@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+body{
+    background:#eee;
+}
+
+.card{
+    border:solid 8px dodgerblue;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:white;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:8px;
+    height:100%;
+    background-color:orange;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+
+
+table{
+	border:solid 2px dodgerblue!important;
+}
+
+td{
+	color:dodgerblue!important;
+}
+
+.boldf{
+	font-weight: 650;
+}
+
+.delete-btn{
+	color:white!important;
+
+	}
+
+.logout-dsgn{
+	position:absolute;
+	top:5%;
+	left:85%;
+}
+
+.approval-dsgn{
+	position:absolute;
+	top:5%;
+	left:68%;
+}
+
+.reportbtn-dsgn{
+	position:absolute;
+	top:5%;
+	left:53%;
+}
+.changepass-dsgn{
+	position:absolute;
+	top:13%;
+	left:81%;
+}
+
+.hdng-dsgn{
+	position:absolute;
+	color: dodgerblue; 
+	top:4%;
+	left:7%;
+	font-weight: 700;
+}
+
+.table-dsgn{
+	margin-top:11vh;
+}	
+
+.approve-btn{
+	background:green;
+	color:white;
+	border:none;
+}
+
+.reject-btn{
+	background: #f40000;
+	color:white;
+	border:none;
+}
+
+.approve-btn:hover , .reject-btn:hover{
+	background-color:black;
+	opacity:50%;
+}
+
+.search-container{
+	position: relative;
+}
+
+
+.search-dsgn{
+	position: relative;
+	width:91%;
+	top:4.4vw;
+}
+
+.search-btn{
+	position:absolute;
+	top:4vw;
+	left:92%;
+}
+	
